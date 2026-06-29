@@ -1,0 +1,20 @@
+name: lbna_parshid
+description: تطبيق لتوثيق أشجار قرية لبنه بارشيد
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  image_picker: ^0.8.7+4
+  path_provider: ^2.0.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

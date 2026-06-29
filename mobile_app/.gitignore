@@ -1,0 +1,16 @@
+# Minimal .gitignore for Flutter mobile_app
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.buildlog
+.idea/
+*.iml
+.android/
+.ios/
+build/
+pubspec.lock
+
+.DS_Store
+*.apk
+*.keystore
