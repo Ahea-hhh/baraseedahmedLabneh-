@@ -10,9 +10,12 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.10.0'
-      - run: flutter pub get
-      - run: flutter build apk --release
+      - name: Build APK
+        run: |
+          cd mobile_app
+          flutter pub get
+          flutter build apk --release
       - uses: actions/upload-artifact@v4
         with:
           name: release-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: mobile_app/build/app/outputs/flutter-apk/app-release.apk
