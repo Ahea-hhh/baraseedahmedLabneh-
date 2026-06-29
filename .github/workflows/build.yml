@@ -10,6 +10,8 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.10.0'
+      - name: List files
+        run: ls -R
       - name: Build APK
         run: |
           cd mobile_app
